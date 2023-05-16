@@ -57,13 +57,24 @@ footer a:hover {
     color:#FFF;
 }
 
+#hero-img {
+    width:100%;
+}
+
+
 .msg p {
     color:#000;
 }
         
-icon {
+.logo {
     width: 80px;
 }
+
+.icon {
+    width: 80px;
+}
+
+.icon
 
 
 footer p {
