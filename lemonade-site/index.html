@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script>
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/Lemonade Juice Company-logos.jpeg" alt="imagelogo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="freqa.html">FAQ</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+        </header>
+        <div class="title-home">
+            <h2>Lemonade Juice Company</h2>
+            <p>Welcome to our website, here  is eight benefit of Lemonade Juice</p>
+        </div>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 2</div>
+              <img src="images/lemonade_1.jpg" style="width:100%">
+              <div class="text">Benefit of Lemonade Juice</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 2</div>
+              <img src="images/lemonade_2.jpg" style="width:100%">
+              <div class="text">Benefit of Lemonade Juice</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        <div class="home-grid">
+            <section class="tip">
+                <h3>About half of all Nigerian don't have enough magnesium in their diet</h3>   
+                <p> Experiencing fatigue, frequent headaches, anxiousness or muscle cramps?
+                    Magnesium has often been linked to helping fight these symptoms!
+                    Your daily dose of LEMONADE! LEMONADE JUICE will a substantial top up
+                    to your recommended intake of Magnesium in a single bottle!
+                </p>
+               
+            </section>
+
+            <section class="tip">
+                <h3>More than 25% of Nigerian females and males don't have enough Vit. C in their diet!</h3>   
+                <p>
+                    Feel like you are coming down with something? Stressed or must recover after exercise? 
+                    Engage in physical activities? Adequate intake of Vitamin C will support all of the above LeVeL up your Vitamin C! Our tangy Lemonade will provide 100% of the recommended daily intake of Vitamin C!
+
+                </p>
+                
+            </section>
+
+            <section class="tip">
+                <h3>More than 1 in 2 Nigerian consumes more sugar than recommended!</h3>   
+                <p>
+                    LEMONADE JUICE contains about 75% less sugar than most soft-drinks and boasts 5% Lemon juice.Have your Lemonade and drink it too! LEMONADE JUICE is 97.5% sugar free!
+                </p>
+                
+            </section>
+
+            <section class="tip">
+                <h3>What is the full ingredients list?</h3>   
+                <p>
+                    Carbonated Water (Water, Carbon Dioxide), Lemon Juice From Concentrate (5%), Fructose, Magnesium (sourced from natural Magnesium Sulphate), Food Acids (330, 331), Natural Flavour, Vitamin C, Thickener (Acacia Gum) Sweetners (955, 950), Natural Colour (161b).
+
+                </p>
+                
+            </section>
+
+            <section class="tip">
+                <h3>
+                    Nigerian are returning to sparkle – "healthful carbonated" drinks are in strongest growth!
+
+                </h3>   
+                <p>
+                    This is a drink that features an unapologetic "fizz". It has been carefully designed for consumers who do like a carbonated soft drink, but are looking for a “better for you” alternative. We think that Kombucha taste is NOT for everyone – but who doesn’t like a lemonade? When life hands you a Lemonade... We created a range of delicious "craveable" lemonades – that are actually good for you! LEMONADE JUICE comes in delicious flavours: Original Lemon, Lemon & Orange, Lemon & Pineapple and Lemon & Raspberry.
+
+                </p>
+                
+            </section>
+
+            <section class="tip">
+                <h3>How many servings can you have per day?</h3>   
+                <p>
+                    Level Lemonade is a Formulated Supplementary Sports Food supplying half of the RDI of magnesium and Vitamin C, and should be consumed once daily and not in conjunction with other magnesium and Vitamin C supplements.This beverage is not a sole source of nutrition and should be consumed in conjunction with a nutritious diet and an appropriate physical training or exercise program. Not suitable for children under 15 years of age or pregnant women: should only be used under medical or dietetic supervision. Not recommended for people with sensitivity to magnesium or while fasting.
+
+                </p>
+                
+            </section>
+
+            <section class="tip">
+                <h3>Why low sugar and not sugar free?</h3>   
+                <p>
+                    We believe the no sugar variants available today have an inferior taste to regular carbonated drinks. With 75% less sugar than regular carbonated drinks, Level Lemonade is designed for consumers after a ‘cravable’ lemonade that is actually good for you – so they can have the best of both world’s!Our lemonade contains artificial sweeteners 955 and 950.
+                </p>
+                
+            </section>
+
+            <section class="tip">
+                <h3>What is the full ingredients list?</h3>   
+                <p>
+                    Carbonated Water (Water, Carbon Dioxide), Lemon Juice From Concentrate (5%), Fructose, Magnesium (sourced from natural Magnesium Sulphate), Food Acids (330, 331), Natural Flavour, Vitamin C, Thickener (Acacia Gum) Sweetners (955, 950), Natural Colour (161b).
+                </p>
+                
+            </section>
+        </div>
+        <footer>
+            <p>Lemonade Juice Company &copy; 2023 - Ekpenyong Mfon</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div> 
+</body>
+</html>
