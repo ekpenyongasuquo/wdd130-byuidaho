@@ -1,47 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script>
-        let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-    </script>
+    
 </head>
 <body>
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/Lemonade Juice Company-logos.jpeg" alt="imagelogo">
+                <img class="logo" src="images/log.png" alt="image logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -57,13 +28,13 @@ function showSlides(n) {
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
               <div class="numbertext">1 / 2</div>
-              <img src="images/lemonade_1.jpg" style="width:100%">
+              <img src="images/lemonade_1.png" style="width:100%">
               <div class="text">Benefit of Lemonade Juice</div>
             </div>
           
             <div class="mySlides fade">
               <div class="numbertext">2 / 2</div>
-              <img src="images/lemonade_2.jpg" style="width:100%">
+              <img src="images/lemonade_2.png" style="width:100%">
               <div class="text">Benefit of Lemonade Juice</div>
             </div>
           
@@ -71,9 +42,7 @@ function showSlides(n) {
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-          
           <br>
-          
           <!-- The dots/circles -->
           <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
@@ -85,9 +54,9 @@ function showSlides(n) {
                 <p> Experiencing fatigue, frequent headaches, anxiousness or muscle cramps?
                     Magnesium has often been linked to helping fight these symptoms!
                     Your daily dose of LEMONADE! LEMONADE JUICE will a substantial top up
-                    to your recommended intake of Magnesium in a single bottle!
+                    to your recommended intake of Magnesium in a single bottle 
                 </p>
-               
+                
             </section>
 
             <section class="tip">
