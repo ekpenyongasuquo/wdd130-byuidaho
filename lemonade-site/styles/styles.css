@@ -83,9 +83,9 @@ body {
 }
 
 /* Hide the images by default */
-.mySlides {
+/*.mySlides {
   display: none;
-}
+} */
 
 /* Next & previous buttons */
 .prev, .next {
@@ -135,7 +135,7 @@ body {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+/*.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -144,7 +144,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
+}*/
 
 .active, .dot:hover {
   background-color: #717171;
